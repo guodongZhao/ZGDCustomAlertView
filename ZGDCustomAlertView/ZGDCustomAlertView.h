@@ -23,7 +23,16 @@
 
 @property (nonatomic, weak) id<ZGDCustomAlertViewDelegate> delegate;
 
-- (instancetype)initWithFrame:(CGRect)frame AndLeftButtonTitle:(NSString *)leftButtonTitle AndRightButtonTitle:(NSString *)rightButtonTitle AndCenterText:(NSString *)centerText;
+/**
+ *  @see                      设置ZGDCustomAlertView
+ *
+ *  @param leftButtonTitle    自定义左侧按钮内容
+ *  @param rightButtonTitle   自定义右侧按钮内容
+ *  @param centerText         自定义中心提示内容
+ */
+- (instancetype)initWithLeftButtonTitle:(NSString *)leftButtonTitle
+                    AndRightButtonTitle:(NSString *)rightButtonTitle
+                          AndCenterText:(NSString *)centerText;
 
 
 

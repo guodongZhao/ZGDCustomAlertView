@@ -97,10 +97,10 @@
 
 #pragma mark -
 #pragma mark lifecycle
-- (instancetype)initWithFrame:(CGRect)frame AndLeftButtonTitle:(NSString *)leftButtonTitle AndRightButtonTitle:(NSString *)rightButtonTitle AndCenterText:(NSString *)centerText
+- (instancetype)initWithLeftButtonTitle:(NSString *)leftButtonTitle AndRightButtonTitle:(NSString *)rightButtonTitle AndCenterText:(NSString *)centerText
 {
     
-    if (self = [super initWithFrame:frame]) {
+    if (self = [super init]) {
         
         ZGD_leftButtonTitle = leftButtonTitle;
         ZGD_rightButtonTitle = rightButtonTitle;

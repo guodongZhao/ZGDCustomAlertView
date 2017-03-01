@@ -31,7 +31,7 @@
 #pragma mark -
 #pragma mark 按钮点击事件
 - (void)Action_ShowAlertView:(UIButton *)button{
-    ZGDCustomAlertView *NewAlertView = [[ZGDCustomAlertView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_HEIGHT, SCREEN_WIDTH) AndLeftButtonTitle:@"是" AndRightButtonTitle:@"否" AndCenterText:@"提示框显示完成 是否关闭?"];
+    ZGDCustomAlertView *NewAlertView = [[ZGDCustomAlertView alloc] initWithLeftButtonTitle:@"是" AndRightButtonTitle:@"否" AndCenterText:@"提示框显示完成 是否关闭?"];
     NewAlertView.delegate = self;
 }
 
