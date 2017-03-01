@@ -15,6 +15,7 @@
     NSString *ZGD_leftButtonTitle;
     NSString *ZGD_rightButtonTitle;
     NSString *ZGD_centerText;
+    
 }
 
 // 底部蒙版
@@ -132,6 +133,11 @@
     if ([self.delegate respondsToSelector:@selector(ShopCustomAlertViewAction_LeftButton:)]) {
         [self.delegate ShopCustomAlertViewAction_LeftButton:leftButton];
     }
+    
+    // 注销所有页面
+    [self.ZGD_AlertBackGroundView removeFromSuperview];
+    [self.ZGD_MainBackGroundView removeFromSuperview];
+    [self removeFromSuperview];
 }
 #pragma mark -
 #pragma mark ActionRightButton
@@ -139,6 +145,10 @@
     if ([self.delegate respondsToSelector:@selector(ShopCustomAlertViewAction_RightButton:)]) {
         [self.delegate ShopCustomAlertViewAction_RightButton:RightButton];
     }
+    // 注销所有页面
+    [self.ZGD_AlertBackGroundView removeFromSuperview];
+    [self.ZGD_MainBackGroundView removeFromSuperview];
+    [self removeFromSuperview];
 }
 
 
